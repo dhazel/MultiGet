@@ -13,8 +13,8 @@
  *
  **/
 class MultiGet_Request 
+implements MultiGet_RequestInterface
 {
-
     /**
      * @var string
      **/
@@ -66,6 +66,7 @@ class MultiGet_Request
     {
         $this->curlOptions = $curlOptions;
     }
+
     /**
      * @param string $eventType
      * @param callable $callback

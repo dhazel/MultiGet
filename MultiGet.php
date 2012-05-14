@@ -26,6 +26,7 @@
  * $mget.go();
  **/
 class MultiGet 
+implements MultiGetInterface
 {
     /**
      * The maximum number of requests to process simultaneously
