@@ -138,9 +138,8 @@ implements MultiGetInterface
     /**
      * @param string $url
      * @param array|string $postFields
-     * @param array $curlOptions
      **/
-    public function request($url, $postFields = null, $curlOptions = null) 
+    public function request($url, $postFields = null) 
     {
         $postData = null;
         if (isset($postFields) && is_array($postFields)) {
