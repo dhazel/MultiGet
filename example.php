@@ -1,9 +1,12 @@
 <?
 
-  require_once "MultiGet.php";
+  require_once "MultiGet_GetInterface.php";
+  require_once "MultiGet_Get.php";
+  require_once "MultiGet_RequestInterface.php";
+  require_once "MultiGet_Request.php";
 
   $hashTags = array('php', 'javascript');
-  $mget = new MultiGet();
+  $mget = new MultiGet_Get();
 
   foreach ($hashTags as $tag) {
     $url = 'http://search.twitter.com/search.json?q=' . urlencode($tag) . '&rpp=5&include_entities=true&with_twitter_user_id=true&result_type=mixed';
