@@ -7,7 +7,7 @@
 
 
 /**
- * $mget = new MultiGet(3);
+ * $mget = new MultiGet_Get(3);
  * $url = '...';
  * $userVar = '...';
  * $curlOptions = array(...);
@@ -151,7 +151,7 @@ implements MultiGet_GetInterface
         } else {
           $postData = $postFields;
         }
-        $x = new MultiGet_Request($url, $postData, $curlOptions);
+        $x = new MultiGet_Request($url, $postData);
         $this->_request($x);
         return $x;
     }
