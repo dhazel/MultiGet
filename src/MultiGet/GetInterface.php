@@ -9,7 +9,7 @@
 /**
  *
  **/
-interface MultiGetInterface 
+interface MultiGet_GetInterface 
 {
     /**
      * @param string $url

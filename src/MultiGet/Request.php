@@ -73,7 +73,7 @@ implements MultiGet_RequestInterface
      **/
     public function on($eventType, $callback) 
     {
-        if ( ! in_array($eventType, MultiGet::EVENTTYPES) ) {
+        if ( ! in_array($eventType, MultiGet_Get::EVENTTYPES) ) {
             throw new Exception('The event type "'.$eventType.'" is not a valid event!');
         }
         $this->listeners[] = array('eventType' => $eventType, 'callback' => $callback);
@@ -88,7 +88,7 @@ implements MultiGet_RequestInterface
      **/
     public function emit($eventType/*, $arg1, $arg2, ... */) 
     {
-        if ( ! in_array($eventType, MultiGet::EVENTTYPES) ) {
+        if ( ! in_array($eventType, MultiGet_Get::EVENTTYPES) ) {
             throw new Exception('The event type "'.$eventType.'" is not a valid event!');
         }
         $args = array_slice(func_get_args(), 1);
