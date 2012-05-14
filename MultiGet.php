@@ -81,13 +81,11 @@ class MultiGet
 
     /**
      * @param int $maxRequests
-     * @param array $curlOptions
      **/
-    public function __construct($maxRequests = 4, $curlOptions = null) 
+    public function __construct($maxRequests = 4) 
     {
         $this->maxRequests = $maxRequests;
         $this->requests = array();
-        $this->curlOptions = $curlOptions;
     }
 
     /**
@@ -124,6 +122,14 @@ class MultiGet
         } else {
             $this->queue[] = $x;
         }
+    }
+
+    /**
+     * @param array $curlOptions
+     **/
+    public function setCurlOptions(array $curlOptions) 
+    {
+        $this->curlOptions = $curlOptions;
     }
 
     /**

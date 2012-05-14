@@ -52,15 +52,20 @@ class MultiGet_Request
     /**
      * @param string $url
      * @param array|string $postData
-     * @param array $curlOptions
      **/
-    public function __construct($url, $postData = null, $curlOptions = null) 
+    public function __construct($url, $postData = null)
     {
         $this->url = $url;
         $this->postData = $postData;
-        $this->curlOptions = $curlOptions;
     }
 
+    /**
+     * @param array $curlOptions
+     **/
+    public function setCurlOptions(array $curlOptions) 
+    {
+        $this->curlOptions = $curlOptions;
+    }
     /**
      * @param string $eventType
      * @param callable $callback
