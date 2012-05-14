@@ -25,9 +25,7 @@ Origin
 ------
 This is a refactoring of the `MultiGet` found here: 
 
-    [https://github.com/Yaffle/MultiGet][1]
-    
-    [1]:https://github.com/Yaffle/MultiGet
+[https://github.com/Yaffle/MultiGet](https://github.com/Yaffle/MultiGet)
 
 This refactored version is restructured to comply with PSR-0 directory
 structure, has revised names to be more intuitive as a ZF2 module, and has a
