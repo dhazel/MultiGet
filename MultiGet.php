@@ -10,7 +10,9 @@
  * $mget = new MultiGet(3);
  * $url = '...';
  * $userVar = '...';
- * $mget->request($url, $postFields, $curlOptions)
+ * $curlOptions = array(...);
+ * $mget->request($url, $postFields)
+ * ->setCurlOptions($curlOptions)
  * ->on('success', function ($content, $url, $handle) use ($userVar) {
  * 
  * })
