@@ -2,10 +2,9 @@
 
 namespace MultiGet;
 
-use Zend\Module\Consumer\AutoloaderProvider;
 
 
-class Module implements AutoloaderProvider
+class Module
 {
     public function getAutoloaderConfig()
     {
