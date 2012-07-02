@@ -88,7 +88,7 @@ implements MultiGet_RequestInterface
      **/
     public function emit($eventType/*, $arg1, $arg2, ... */) 
     {
-        if ( ! in_array($eventType, MultiGet_Get::EVENTTYPES) ) {
+        if ( ! in_array($eventType, MultiGet_Get::$EVENTTYPES) ) {
             throw new Exception('The event type "'.$eventType.'" is not a valid event!');
         }
         $args = array_slice(func_get_args(), 1);
