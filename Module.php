@@ -2,8 +2,6 @@
 
 namespace MultiGet;
 
-
-
 class Module
 {
     public function getAutoloaderConfig()
@@ -13,7 +11,7 @@ class Module
                 __DIR__ . '/autoload_classmap.php',
             ),
             'Zend\Loader\StandardAutoloader' => array(
-                'namespaces' => array(
+                'prefixes' => array(
                     __NAMESPACE__ => __DIR__ . '/src/' . __NAMESPACE__,
                 ),
             ),

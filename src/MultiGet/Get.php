@@ -77,7 +77,7 @@ implements MultiGet_GetInterface
      * @var array
      **/
     public static $EVENTTYPES = array(
-        'SUCCESS' = self::SUCCESS,
+        'SUCCESS' => self::SUCCESS,
         'ERROR' => self::ERROR,
         'COMPLETE' => self::COMPLETE,
     );
